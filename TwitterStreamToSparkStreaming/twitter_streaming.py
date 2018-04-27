@@ -1,9 +1,11 @@
-from twitter_keys import *
-
 from twython import Twython
 from twython import TwythonStreamer
-
 from socket import socket
+
+access_token = "acces_token"
+access_token_secret = "access_token_secret"
+consumer_key = "consumer_key"
+consumer_secret = "consumer_secret"
 
 twitter = Twython(consumer_key, consumer_secret, access_token, access_token_secret)
 twitter.verify_credentials()
